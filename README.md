@@ -98,3 +98,30 @@ calcolo_costo_Dati: consumo_gb * COSTO_AL_GB
 ### Test
 
 ???
+
+## Come lanciare in locale
+
+### Requisiti
+
+- Installare un compilatore C
+  Possibili guide: https://dev.to/gamegods3/how-to-install-gcc-in-windows-10-the-easier-way-422j
+
+- Installare un IDE con compilatore C
+
+### Avvio dei test
+
+Dalla directory root di progetto, eseguire:
+
+```
+>  gcc ./src/lib/unity.c ./src/test/esercizioTest.c -o out/esercizioTest
+> ./out/esercizioTest
+```
+
+### Avvio dell'applicazione
+
+Dalla directory root di progetto, eseguire:
+
+```
+>  gcc ./src/app/esercizio.c ./src/app/main.c -o out/main
+> ./out/main
+```
